@@ -32,11 +32,13 @@ class Main{
         name = sc.nextLine();
         System.out.println("Enter the grade level : ");
         grade_level = sc.next().charAt(0);
+        System.out.println("Enter GPA : ");
         gpa = sc.nextDouble();
         Student s = new Student(name, grade_level, gpa);
         String studentGrade = s.student_grade();
         System.out.println(studentGrade);
         s.update_GPA(94.6);
-        System.out.println(s.student_grade());
+        studentGrade = s.student_grade();
+        System.out.println(studentGrade);
     }
 }
