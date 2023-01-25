@@ -17,7 +17,7 @@ public class Student {
         gpa = newGpa;
     }
 
-    public String student_grade(){
+    public String studentGrade(){
         return name + " has a gpa of " + gpa;
     }
 }
@@ -35,10 +35,10 @@ class Main{
         System.out.println("Enter GPA : ");
         gpa = sc.nextDouble();
         Student s = new Student(name, gradeLevel, gpa);
-        String studentGrade = s.student_grade();
+        String studentGrade = s.studentGrade();
         System.out.println(studentGrade);
         s.updateGPA(94.6);
-        studentGrade = s.student_grade();
+        studentGrade = s.studentGrade();
         System.out.println(studentGrade);
     }
 }
