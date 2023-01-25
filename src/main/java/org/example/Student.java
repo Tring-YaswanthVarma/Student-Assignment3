@@ -34,7 +34,8 @@ class Main{
         grade_level = sc.next().charAt(0);
         gpa = sc.nextDouble();
         Student s = new Student(name, grade_level, gpa);
-        System.out.println(s.student_grade());
+        String studentGrade = s.student_grade();
+        System.out.println(studentGrade);
         s.update_GPA(94.6);
         System.out.println(s.student_grade());
     }
