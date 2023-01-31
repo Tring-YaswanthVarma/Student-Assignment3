@@ -8,22 +8,22 @@ public class Student {
     private char gradeLevel;
     private double gpa;
 
-    Student(String name, char gradeLevel, double gpa){
+    Student(String name, char gradeLevel, double gpa) {
         this.name = name;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
     }
 
-    public void updateGPA(double newGpa){
+    public void updateGPA(double newGpa) {
         gpa = newGpa;
     }
 
-    public String studentGrade(){
+    public String studentGrade() {
         return name + " has a gpa of " + gpa;
     }
 }
 
-class Main{
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Logger logger = Logger.getLogger("com.api.jar");
@@ -42,5 +42,6 @@ class Main{
         s.updateGPA(94.6);
         studentGrade = s.studentGrade();
         logger.info(studentGrade);
+
     }
 }
